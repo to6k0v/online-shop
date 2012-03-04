@@ -1,0 +1,425 @@
+body {
+	background-color:#f9fbf9;
+	font-family: sans-serif;
+	font-size: 12px;
+}
+
+a {
+	color: #00ab11;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	border: 0px;
+}
+
+/**
+ * Forms and form elements
+ */
+/**
+ * Forms and form-likes (lists with properties etc)
+ */
+form + fieldset {
+	margin-top: -1em;
+}
+
+fieldset {
+	background-color: #fff;
+	margin: 0em 0em 1em 0em;
+	border-top: 0px;
+}
+
+fieldset > fieldset, fieldset > form > fieldset {
+	border: 0px;
+	margin-top: -1em;
+	padding-top: 0.5em;
+}
+
+legend {
+	position: absolute;
+	top: -.5em;
+	left: .2em;
+	font-size: 1em;
+	color: #999;
+}
+
+fieldset dt {
+	min-height: 2em;
+	float: left;
+	clear: left;
+	width: 180px;
+}
+
+fieldset dd {
+	min-height: 2em;
+	margin-left: 0px;
+	vertical-align: top;
+	text-align: left;
+}
+
+form {
+	display: inline;
+}
+
+dt input {
+	float: right;
+}
+
+label {
+	cursor: pointer;
+	float: none;
+	font-weight: normal;
+}
+
+input, input.text, input.password, input.title, textarea, select {
+	margin: 0px;
+	margin-bottom: 0.5em;
+	background-color: #ffffff
+}
+
+.radio {
+	vertical-align: middle;
+	margin: 2px;
+	margin-right: 5px;
+}
+
+.checkbox {
+	vertical-align: middle;
+	margin: 0px;
+	padding: 0px;
+	margin-right: 5px;
+}
+
+li input.text {
+	width: 100%;
+}
+
+fieldset div.buttons, .no_fieldset.buttons {
+	margin-left: 180px;
+
+}
+
+fieldset div.buttons.pad-bottom {
+	margin-bottom: 1em;
+}
+
+div.buttons .previous {
+	margin-left: -180px;
+}
+
+div.buttons .next {
+	margin-left: -180px;
+	float: right;
+}
+
+button {
+    background-color:#f5f5f5;
+    border:1px solid #dedede;
+    border-top:1px solid #eee;
+    border-left:1px solid #eee;
+
+    font-size: 100%;
+    line-height: 120%;
+    text-decoration: none;
+    font-weight: bold;
+    color: #565656;
+    cursor: pointer;
+    width: auto;
+    overflow: visible;
+
+    margin:0 7px 0 0;
+    padding:4px 8px 4px 6px; /* Firefox */
+}
+
+*:first-child+html button[type]{
+    padding:4px 10px 3px 7px; /* IE7 */
+}
+
+button img {
+    margin:0 3px -3px 0 !important;
+    padding:0;
+    border:none;
+    width:16px;
+    height:16px;
+}
+
+
+
+/**
+ * Containers
+ */
+#top {
+	text-align: right;
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+#top span {
+	padding-right: 15px;
+}
+
+#top a {
+	color: #00ab11;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#top a:hover {
+	background-color: #00ab11;
+	color: #fff;
+}
+
+#left {
+	position: absolute;
+	padding-left: 20px;
+}
+
+#right {
+	float: right;
+	padding-right: 10px;
+}
+
+#content {
+	margin-left: 160px;
+	margin-right: 205px;
+	font-size: 11px;
+	color: #004F88;
+}
+
+#footer {
+	margin-top: 2em;
+	clear: both;
+	text-align: right;
+	margin-bottom: 50px;
+}
+
+/* Menu */
+
+#menu {
+	width: 130px;
+	font-size: 11px;
+}
+
+#menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+	
+#menu li {
+	margin: 0;
+	text-align: left;
+}
+
+#menu ul li.overline {
+	border-top: 2px solid black;
+}
+
+#menu ul li.right {
+	text-align: right;
+	font-weight: bold;
+}
+
+
+#menu li a {
+	display: block;
+}
+
+
+#menu li a {
+	padding: 5px 5px 5px 0.5em;
+	text-decoration: none;
+	color: #808485;
+	width: 100%;
+}
+
+html > body #menu li a {
+	width: auto;
+}
+
+#menu li a:hover, #menu li a.active {
+	background-color: #004F88;
+	color: #fff;
+}
+
+#language {
+	width: 150px;
+	text-align: center;
+}
+
+
+/* Content */
+.important {
+	font-weight: bold;
+	color: #FF0000;
+	margin: 0;
+}
+
+.important a {
+	color: #FF0000;
+}
+
+.validate_error {
+	color: #ff0000;
+	font-weight: bold;
+	margin-left: 247px;
+}
+
+h1, h1 a {
+	color: #94989f;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 3px;
+	padding-top: 10px;
+}
+
+h2 {
+	background-color: #004F88;
+	color: #fff;
+	font-size: 13px;
+	font-weight: bold;
+	display: block;	
+	position: relative;
+	padding: 3px 3px 3px 10px;
+	margin-bottom: 0em;
+	height: 1.3em;
+}
+h2 .left {
+	width: 50%;
+	float: left;
+}
+
+h2 .right {
+	width: 45%;
+	float: right;
+	display: inline;
+	text-transform: none;
+	font-weight: normal;
+	font-size: .8em;
+	padding: 2px 10px 0 0;
+	position: absolute;
+	text-align: right;
+}
+
+h2 .right img {
+	vertical-align:middle;
+}
+
+h3 {
+	background-color: #2f8d23;
+	padding: 5px 5px 5px 10px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.05em;
+}
+
+.right a {
+	color: #fff;
+	text-decoration: none;
+}
+
+div#customer_information {
+	float: right;
+}
+
+div#sl table {
+	margin-bottom: 2px;
+}
+
+div#hidden {
+	visibility: hidden;
+}
+
+table {
+	width: 100%;
+	border-top: 0px;
+	background-color: #fff;
+}
+
+table th {
+	background-color: #2f8d23;
+	color: #fff;
+	font-size: 1.05em;
+	font-weight: bold;
+	text-align: left;
+}
+
+table th, table td{
+	padding: 2px 10px 2px 10px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+tr.even td {
+	background-color: #e4ffe0;
+}
+
+tr.odd td {
+	background-color: #fefefe;
+}
+
+tr.hover td {
+	background-color: #c7e4c9;
+}
+
+td.attachments {
+	/*border-top: 1px solid #2F8D23;*/
+	padding: 5px;
+}
+
+span.information_hint {
+	margin-left: 5px;
+	padding-left: 20px; 
+	color:#004F88;
+	background-image:url('/icon/information.png');
+	background-repeat: no-repeat; 
+	background-position: 0px -1px;
+}
+
+/* Offer basket */
+#offer_basket {
+	margin-top: 10px;
+	width: 175px;
+	position: relative;
+	border: 1px solid #2f8d23;
+	background-color: #fff;
+	z-index: 10;
+	overflow: hidden;
+}
+
+.ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: hidden;
+	-ms-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	-moz-binding: url('/ellipsis.xml#ellipsis');
+}
+
+
+
+
+
+/** * Ogone style  * **/
+.ncoltable1, .ncoltable2, .ncoltable3 { width: 60%; text-align: center; margin: auto auto; margin-top: 20px; }
+.ncoltable2 > tbody > tr > td { text-align: center; }
+.ncoltable2 > tbody > tr > td.ncolinput { text-align: left; }
+.ncoltxtl, .ncoltxtl2, .ncollogoc { text-align: right; }
+.ncoltxtl2 small, .ncoltxtl small { display: block; width: 100%; text-align: right; font-weight: bold; font-size: 1em; }
+.ncolinput { text-align: left; }
+#submit3 { width: auto; height: 2.5em; vertical-align: middle; padding: 0px 2px 3px 2px; }
+.ncol { color: #fff; font-weight: bold; width: auto; height: 2em; border: 1px solid #000; background-color: #666; }
+.ncolh1 { text-align: center; font-weight: bold; }
+.ncolh1 small { font-size: 1.2em; }
+.ncollogoc { text-align: center; }
+#NCOLPP { display: none; }
+.ncollogoc img { display: none; }
+.ncollogoc small small { display: none; }
